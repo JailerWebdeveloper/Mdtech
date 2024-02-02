@@ -1,29 +1,49 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import BotonMagico from "../components/BotonMagico/BotonMagico.astro";
 import Herocarrousel from "../components/Herocarrousel/Herocarrousel.astro";
 ---
 
 <Layout title="Mdtech">
-	<main>
-		<section class=" relative w-full h-screen">
-			<Herocarrousel />
-		</section>
+  <main>
+    <section class="relative w-full h-screen">
+      <Herocarrousel />
+    </section>
 
-		<section>
-			<div class="w-full h-screen flex p-10 items-center justify-center">
-				<div class="w-1/2 md:p-10 flex flex-col gap-4 justify-center  items-center text-justify">
-					<p class="md:text-4xl font-bold tracking-wider uppercase antialiased text-yellow-600">
-						texto Gancho
-					</p>
-					<p class="text-sm text-gray-300">
-					Descripcion	
-					</p>
-				</div>
-				<div class="w-1/2">
-				</div>			
-			</div>
-		</section>
-	</main>
+    <section>
+      <div
+        class="w-full h-screen flex flex-col md:flex-row p-10 items-center justify-center"
+      >
+        <div
+          class="w-1/2 md:p-10 flex flex-col gap-4 justify-center items-center text-justify"
+        >
+          <p
+            class="md:text-6xl md:self-start font-bold tracking-wider uppercase antialiased text-yellow-500"
+          >
+            texto Gancho
+          </p>
+          <p class="text-lg text-gray-300">
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+            archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
+            de las industrias desde el año 1500, cuando un impresor (N. del T.
+            persona que se dedica a la imprenta) desconocido usó una galería de
+            textos y los mezcló de tal manera que logró hacer un libro de textos
+            especimen. No sólo sobrevivió 500 años
+          </p>
+          <div class="w-full self-start my-5 flex items-center justify-center">
+            <BotonMagico Texto="Ver más" />
+          </div>
+        </div>
+        <div class="w-1/2 p-10 flex justify-center items-center">
+          <iframe
+			class="w-full h-96 md:h-96 rounded-2xl hover:ring hover:cursor-pointer  transition-all "
+            src="https://www.youtube.com/embed/jNUTxvki_d0?si=U_bue7vrFWJlVrqi"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
-

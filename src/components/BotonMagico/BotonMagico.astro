@@ -6,7 +6,7 @@ interface Props {
 const { Texto } = Astro.props;
 ---
 
-<button class="btn mx-auto">
+<button class="bt mx-auto w-full">
   <svg
     height="24"
     width="24"
@@ -25,10 +25,10 @@ const { Texto } = Astro.props;
 </button>
 
 <style>
-  .btn {
+  .bt {
     border: none;
     width: 15em;
-    height: 5em;
+    height: 3em;
     border-radius: 3em;
     display: flex;
     justify-content: center;
@@ -50,21 +50,21 @@ const { Texto } = Astro.props;
     font-size: medium;
   }
 
-  .btn:hover {
-    background: linear-gradient(0deg, #a47cf3, #683fea);
+  .bt:hover {
+    background: linear-gradient(0deg, #f7ff60, #fbff18);
     box-shadow:
       inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
       inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
       0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-      0px 0px 180px 0px #9917ff;
+      0px 0px 180px 0px #ffff17;
     transform: translateY(-2px);
   }
 
-  .btn:hover .text {
+  .bt:hover .text {
     color: white;
   }
 
-  .btn:hover .sparkle {
+  .bt:hover .sparkle {
     fill: white;
     transform: scale(1.2);
   }
