@@ -12,13 +12,13 @@ import Herocarrousel from "../components/Herocarrousel/Herocarrousel.astro";
 
     <section>
       <div
-        class="w-full h-screen flex flex-col md:flex-row p-10 items-center justify-center"
+        class="w-full h-screen mt-20 md:mt-0 flex flex-col md:flex-row md:p-10 p-4 items-center justify-center"
       >
         <div
-          class="w-1/2 md:p-10 flex flex-col gap-4 justify-center items-center text-justify"
+          class="md:w-1/2 flex-1 md:p-10 flex flex-col gap-4 justify-center items-center text-justify"
         >
           <p
-            class="md:text-6xl md:self-start font-bold tracking-wider uppercase antialiased text-yellow-500"
+            class="md:text-6xl text-3xl md:self-start font-bold tracking-wider uppercase antialiased text-yellow-500"
           >
             texto Gancho
           </p>
@@ -34,7 +34,7 @@ import Herocarrousel from "../components/Herocarrousel/Herocarrousel.astro";
             <BotonMagico Texto="Ver más" />
           </div>
         </div>
-        <div class="w-1/2 p-10 flex justify-center items-center">
+        <div class="md:w-1/2 flex-1 md:p-10 flex justify-center items-center">
           <iframe
 			class="w-full h-96 md:h-96 rounded-2xl hover:ring hover:cursor-pointer  transition-all "
             src="https://www.youtube.com/embed/jNUTxvki_d0?si=U_bue7vrFWJlVrqi"
