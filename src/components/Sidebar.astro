@@ -1,5 +1,6 @@
 ---
-
+import Logo from 'public/Logo.svg'
+import { Image } from 'astro:assets'
 ---
 
 <div class="navbar absolute z-10 px-10 rounded-full ">
@@ -34,7 +35,7 @@
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl">MDTECH</a>
+    <a class="text-xl btn btn-ghost md:p-4 w-60 h-20"> <img src="./public/Logo.svg" class="w-60" /> </a>
   </div>
   <div class="navbar-end hidden lg:flex">
     <ul class="menu menu-horizontal px-1 z-40">
