@@ -6,10 +6,11 @@ interface Props {
 const { title } = Astro.props;
 import { ViewTransitions } from "astro:transitions";
 import Sidebar from "../components/Sidebar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -22,6 +23,7 @@ import Sidebar from "../components/Sidebar.astro";
   <body class="relative">
     <Sidebar />
     <slot />
+    <Footer />
   </body>
   <style is:global>
     body::-webkit-scrollbar {
