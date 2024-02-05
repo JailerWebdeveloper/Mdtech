@@ -1,51 +1,72 @@
-<div class="flex flex-col items-center w-full justify-center  dark">
-    <div class="w-full max-w-xl bg-gray-800 rounded-lg shadow-md p-6">
-      <h2 class="text-2xl font-bold text-gray-200 mb-4">Contact Form</h2>
-  
-      <form class="flex flex-wrap">
-        <input
-          type="text"
-          class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-          placeholder="Full Name"
-        />
-        <input
-          type="email"
-          class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-          placeholder="Email"
-        />
-        <input
-          type="number"
-          class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-          placeholder="Phone Number"
-        />
-        <input
-          type="text"
-          class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-          placeholder="Company Name"
-        />
-        <input
-          type="text"
-          class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-          placeholder="Job Title"
-        />
-        <input
-          type="date"
-          class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-          placeholder="Date of Birth"
-        />
-        <textarea
-          name="message"
-          class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-auto md:mb-auto md:w-full md:h-auto md:min-h-[100px] md:max-h-[100px] md:flex-grow md:flex-shrink md:flex-auto focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest"
-          placeholder="Message"
-        ></textarea>
-  
-        <button
-          type="submit"
-          class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
+<div class="flex flex-col items-center w-full justify-center dark">
+  <div class="md:w-3/5 w-full border border-primary mx-auto bg-gray-800 rounded-lg shadow-md p-6">
+    <h2 class="text-2xl font-bold text-gray-200 mb-4">Contact Form</h2>
+
+    <form id="Emailform" class="flex  flex-col gap-4 p-1 justify-center items-center flex-wrap">
+      <input
+        type="text"
+        id="Name"
+        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 w-full focus:ring-blue-500 transition ease-in-out duration-150 md:w-[48%]"
+        placeholder="Full Name"
+      />
+      <input
+        type="email"
+        id="Email"
+        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] "
+        placeholder="Email"
+        required
+      />
+      <input
+        type="number"
+        id="Phone"
+        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%]"
+        placeholder="Phone Number"
+        required
+      />
+      <input
+        id="subject"
+        type="text"
+        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] "
+        placeholder="Company Name"
+        required
+      />
+
+      <textarea
+        id="message"
+        name="message"
+        class="bg-gray-700 resize-none w-full text-gray-200 border-0 rounded-md p-2 mb-auto md:mb-auto md:w-full md:h-auto md:min-h-[100px] md:max-h-[100px] md:flex-grow md:flex-shrink md:flex-auto focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest"
+        placeholder="Message"
+        required
+
+      ></textarea>
+
+      <button
+        type="submit"
+        class="btn btn-primary my-2"
+      >
+        Submit
+      </button>
+    </form>
   </div>
-  
+</div>
+
+
+<script is:raw>
+  document.getElementById("Emailform").addEventListener("submit", function(event) {
+      event.preventDefault(); // Evitar que el formulario se envíe por defecto
+      
+      // Obtener valores del formulario
+      const to ="Mdtech@gmail.com";
+      const from= document.getElementById("Email").value;
+      const name = document.getElementById("Name").value;
+      const subject = document.getElementById("subject").value  + " - " + name;
+      const phone = document.getElementById("Phone").value;
+      const message = document.getElementById("message").value;
+      
+      // Construir el enlace para enviar correo
+      const mailtoLink = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=Full%20Name:%20${name}%0D%0AEmail:%20${from}%0D%0APhone:%20${phone}%0D%0AMessage:%20${encodeURIComponent(message)}`;
+      
+      // Abrir el cliente de correo predeterminado con los valores
+      window.location.href = mailtoLink;
+  });
+</script>
