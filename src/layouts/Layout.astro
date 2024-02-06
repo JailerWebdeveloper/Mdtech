@@ -12,8 +12,16 @@ import Footer from "../components/Footer.astro";
 <!doctype html>
 <html lang="en" data-theme="Mdtech">
   <head>
+    <meta
+      name="description"
+      content="Somos una agencia digital especializada en la creación de páginas web atractivas y efectivas, así como en la producción de contenido publicitario innovador. Ofrecemos servicios de diseño web, desarrollo de aplicaciones, marketing digital, gestión de redes sociales y mucho más. ¡Contacta con nosotros para potenciar la presencia en línea de tu negocio!"
+    />
+    <meta
+      name="keywords"
+      content="agencia digital, creación de páginas web, diseño web, desarrollo web, marketing digital, contenido publicitario, SEO, redes sociales, branding, e-commerce, publicidad online, gestión de redes sociales, optimización de conversiones, análisis web"
+    />
+    <meta name="author" content="MDTECH">
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
@@ -24,14 +32,31 @@ import Footer from "../components/Footer.astro";
     <Sidebar />
     <slot />
     <Footer />
-  </body>
-  <style is:global>
-    body::-webkit-scrollbar {
-      width: 7px;
-    }
+    <style is:global>
+      body::-webkit-scrollbar {
+        width: 7px;
+      }
 
-    body::-webkit-scrollbar-thumb {
-      background: #414141;
-    }
-  </style>
+      body::-webkit-scrollbar-thumb {
+        background: #414141;
+      }
+    </style>
+  </body>
+  <script is:raw>
+    document.querySelectorAll('a[data-section]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+  
+          const sectionId = this.getAttribute('data-section');
+          const section = document.getElementById(sectionId);
+  
+          if (section) {
+              section.scrollIntoView({
+                  behavior: 'smooth'
+              });
+          }
+      });
+  });
+  
+  </script>
 </html>

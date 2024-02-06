@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://mdtech.com.co/sitemap.xml

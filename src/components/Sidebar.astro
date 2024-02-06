@@ -2,7 +2,7 @@
 
 ---
 
-<div class="navbar absolute z-10 px-10 rounded-full  text-white">
+<nav class="navbar absolute z-10 px-10 rounded-full  text-white">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -23,33 +23,29 @@
         tabindex="0"
         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
       >
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
+      <li class="hover:text-primary"><a href=""  data-section="QuienesSomos">Quienes somos</a></li>
+        <li class="hover:text-primary">
+          <a href="" data-section="Servicios">Servicios</a>
           <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li><a href="" data-section="Servicios">Nuestros Servicios</a></li>
+            <li><a href="" data-section="NuestrosProyectos">Proyectos</a></li>
+            <li><a href="" data-section="Testimonios">Clientes</a></li>
           </ul>
         </li>
-        <li><a>Item 3</a></li>
+        <li class="hover:text-primary"><a href="" data-section="Contacto">Contactanos</a></li>
       </ul>
     </div>
-    <a class="text-xl btn btn-ghost md:p-4 w-60 h-20"> <img src="./Logo.svg" class="w-60" /> </a>
+    <a href="/" class="text-xl btn btn-ghost md:p-4 w-60 h-20"> <img src="./Logo.svg" class="w-60" /> </a>
   </div>
   <div class="navbar-end hidden lg:flex">
     <ul class="menu menu-horizontal px-1 z-40">
-      <li><a>Quienes somos</a></li>
-      <li>
-        <details>
-          <summary>Servicios</summary>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
+      <li class="hover:text-primary"><a href=""  data-section="QuienesSomos">Quienes somos</a></li>
+      <li class="hover:text-primary">
+        <a href="" data-section="Servicios">Servicios</a>
       </li>
-      <li><a>Contactanos</a></li>
+      <li class="hover:text-primary"><a href="" data-section="Contacto">Contactanos</a></li>
     </ul>
   </div>
  
-</div>
+</nav>
+

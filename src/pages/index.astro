@@ -35,11 +35,11 @@ const portraid = [
 
 <Layout title="Mdtech">
   <main class="flex flex-col gap-10">
-    <section class="relative w-full h-screen">
+    <section id="Inicio" class="relative w-full h-screen">
       <Herocarrousel />
     </section>
 
-    <section>
+    <section id="QuienesSomos">
       <div
         class="w-full h-screen mt-20 md:mt-0 flex flex-col md:flex-row md:p-10 p-4 items-center justify-center"
       >
@@ -74,33 +74,9 @@ const portraid = [
       </div>
     </section>
 
-    <section class="hidden">
-      <div
-        class="w-full flex flex-col gap-4 md:p-10 p-4 items-center justify-start"
-      >
-        <p
-          class="font-bold tracking-wider text-3xl md:text-6xl uppercase text-primary md:self-start antialiased"
-        >
-          TEXTO DE GANCHO
-        </p>
-        <p class="text-gray-300 md:text-2xl text-lg antialiased md:self-start">
-          texto de soporte
-        </p>
-        <div class="divider divider-primary"></div>
 
-        <div
-          class="grid w-full place-content-center place-items-center gap-8 md:grid-cols-4 grid-cols-2"
-        >
-          {
-            portraid.map(({ id, title, description, img }) => (
-              <Card Titulo={title} Descripcion={description} Imagen={img} />
-            ))
-          }
-        </div>
-      </div>
-    </section>
 
-    <section class="text-primary body-font p-7 text-center">
+    <section id="NuestrosProyectos" class="text-primary body-font p-7 text-center">
       <div class="container px-5 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1
@@ -269,7 +245,7 @@ const portraid = [
       </div>
     </section>
 
-    <section class="text-primary body-font">
+    <section id="Servicios" class="text-primary body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center mb-20">
           <h1
@@ -410,7 +386,7 @@ const portraid = [
       </div>
     </section>
 
-    <section>
+    <section id="Testimonios">
       <p class="uppercase text-primary font-bold tracking-wide text-5xl text-center">TESTIMONIOS</p>
       <div class="divider divider-primary w-1/5 mx-auto "></div>
       <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8 p-8">
@@ -480,7 +456,7 @@ const portraid = [
       </div>
     </section>
 
-    <section>
+    <section id="Contacto">
       <div class="w-full p-10 flex flex-col justify-center items-center">
         <p
           class="uppercase antialiased text-5xl text-center tracking-wide font-bold text-primary"
