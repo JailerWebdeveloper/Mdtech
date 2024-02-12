@@ -222,10 +222,21 @@ import Sidebar from "../Sidebar.astro";
   }
   .buttons {
     position: absolute;
-    bottom: 30px;
+    bottom:30px;
     z-index: 222222;
     text-align: center;
     width: 100%;
+  }
+
+  @media screen and (max-width: 768px){
+    .buttons {
+    position: absolute;
+    bottom:70px;
+    z-index: 222222;
+    text-align: center;
+    width: 100%;
+  }
+    
   }
   .buttons button {
     width: 50px;
