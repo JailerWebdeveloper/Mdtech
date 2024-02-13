@@ -104,6 +104,13 @@ import Sidebar from "../Sidebar.astro";
       let lists = document.querySelectorAll(".item");
       document.getElementById("slide").prepend(lists[lists.length - 1]);
     };
+
+    setInterval(() => {
+      document.getElementById("next").click();
+    }, 8000);
+
+
+
   </script>
 </body>
 
