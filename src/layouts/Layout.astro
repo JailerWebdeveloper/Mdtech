@@ -7,11 +7,40 @@ const { title } = Astro.props;
 import { ViewTransitions } from "astro:transitions";
 import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
+import { SEO } from "astro-seo";
 ---
 
 <!doctype html>
 <html lang="en" data-theme="Mdtech">
   <head>
+
+    <SEO
+      title="Mdtech | Agencia Digital"
+      description="Somos una agencia digital especializada en la creación de páginas web atractivas y efectivas, así como en la producción de contenido publicitario innovador. Ofrecemos servicios de diseño web, desarrollo de aplicaciones, marketing digital, gestión de redes sociales y mucho más. ¡Contacta con nosotros para potenciar la presencia en línea de tu negocio!"
+      openGraph={{
+        basic: {
+          title: "Mdtech | Agencia Digital",
+          type: "website",
+          image: "/Logo.svg",
+        }
+      }}
+      twitter={{
+        creator: "@mdtech",
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/IconR" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "/Logo.svg",
+          },
+          { name: "twitter:title", content: "Mdtech | Agencia Digital" },
+          { name: "twitter:description", content: "agencia digital, creación de páginas web, diseño web, desarrollo web, marketing digital, contenido publicitario, SEO, redes sociales, branding, e-commerce, publicidad online, gestión de redes sociales, optimización de conversiones, análisis web" },
+        ],
+      }}
+    />
     <meta
       name="google-site-verification"
       content="S8niK52G-9qTd-61TI-7GM2N8_hdxIJIqqL-Kb9Cxw8"
