@@ -1,11 +1,12 @@
 ---
 interface Props {
   Texto: string;
+  link: string;
 }
 
-const { Texto } = Astro.props;
+const { Texto,link } = Astro.props;
 ---
-
+<a href="" data-section={link} >
 <button class="bt mx-auto w-full">
   <svg
     height="24"
@@ -23,7 +24,7 @@ const { Texto } = Astro.props;
 
   <span class="text">{Texto}</span>
 </button>
-
+</a>
 <style>
   .bt {
     border: none;
