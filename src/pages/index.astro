@@ -7,12 +7,12 @@ import FormularioContacto from "../components/FormularioContacto.astro";
 ---
 
 <Layout title="MDTech">
-  <main class="flex flex-col gap-10">
+  <main class="flex   flex-col gap-10 textured" ;>
     <section id="Inicio" class="relative w-full h-screen">
       <Herocarrousel />
     </section>
 
-    <section id="QuienesSomos">
+    <section class=""  id="QuienesSomos">
       <div
         class="w-full h-screen mt-20 md:mt-0 flex flex-col md:flex-row md:p-10 p-4 items-center justify-center"
       >
@@ -67,7 +67,7 @@ import FormularioContacto from "../components/FormularioContacto.astro";
         </div>
         <div class="flex flex-wrap -m-4">
           <div
-            class="lg:w-1/3 sm:w-1/2 flex justify-center p-4 items-center rounded-lg"
+            class="lg:w-1/2 sm:w-1/2 flex justify-center p-4 items-center rounded-lg"
           >
             <a
               href="https://figmalandprop.netlify.app"
@@ -100,7 +100,7 @@ import FormularioContacto from "../components/FormularioContacto.astro";
             </a>
           </div>
 
-          <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="lg:w-1/2 sm:w-1/2 p-4">
             <a
               href="https://iridescent-panda-1aea8c.netlify.app"
               target="_blank"
@@ -131,37 +131,7 @@ import FormularioContacto from "../components/FormularioContacto.astro";
               </div>
             </a>
           </div>
-          <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <a
-              href="https://figmalandprop.netlify.app"
-              target="_blank"
-              class="w-full"
-            >
-              <div class="flex relative">
-                <img
-                  alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/600x360"
-                />
-                <div
-                  class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-all duration-300"
-                >
-                  <h2
-                    class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
-                  >
-                    THE SUBTITLE
-                  </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    Shooting Stars
-                  </h1>
-                  <p class="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -200,7 +170,7 @@ import FormularioContacto from "../components/FormularioContacto.astro";
                 <path d="M22 4L12 14.01l-3-3"></path>
               </svg>
               <span class="title-font font-medium"
-                >1.Experiencia y certificación en marketing digital</span
+                >1. Experiencia y certificación en marketing digital</span
               >
             </div>
           </div>
@@ -324,13 +294,13 @@ import FormularioContacto from "../components/FormularioContacto.astro";
       >
         <!-- Testimonio -->
         <div
-          class="flex flex-col gap-6 bg-base border border-primary p-8 rounded-xl drop-shadow-xl"
+          class="flex flex-col gap-6 bg-base border border-primary p-8 rounded-xl text-center drop-shadow-xl"
         >
-          <p class="text-accent">
+          <p class="text-accent mt-2">
             "Excelente calidad de servicio y producto! 100% recomendado"
           </p>
           <div class="flex items-center gap-4">
-            <div>
+            <div class="mx-auto">
               <h3 class="text-accent font-bold">Julene Torres</h3>
               <p class="text-primary font-medium">Cliente natural</p>
             </div>
@@ -338,14 +308,14 @@ import FormularioContacto from "../components/FormularioContacto.astro";
         </div>
         <!-- Testimonio -->
         <div
-          class="flex flex-col gap-6 bg-base border border-primary p-8 md:-translate-y-2 rounded-xl drop-shadow-xl"
+          class="flex flex-col gap-6 bg-base border text-center border-primary p-8 md:-translate-y-2 rounded-xl drop-shadow-xl"
         >
           <p class="text-accent">
             "magnífico trato y dedicación muy agradecido con ellos por ayudarme
             a construir mis sueños "
           </p>
           <div class="flex items-center gap-4">
-            <div>
+            <div class="self-center mx-auto">
               <h3 class="text-accent font-bold">Juan José Atencio</h3>
               <p class="text-primary font-medium">Cliente natural</p>
             </div>
@@ -353,14 +323,14 @@ import FormularioContacto from "../components/FormularioContacto.astro";
         </div>
         <!-- Testimonio -->
         <div
-          class="flex flex-col gap-6 bg-base border border-primary p-8 rounded-xl drop-shadow-xl"
+          class="flex flex-col gap-6 text-center  bg-base border border-primary p-8 rounded-xl drop-shadow-xl"
         >
-          <p class="text-accent">"Recomendado 10/10"</p>
+          <p class="text-accent mt-2">"Recomendado 10/10"</p>
           <div class="flex items-center gap-4">
-            <div>
+            <di class="mx-auto">
               <h3 class="text-accent font-bold">Lina marcela vega</h3>
               <p class="text-primary font-medium">Cliente natural</p>
-            </div>
+            </di>
           </div>
         </div>
       </div>

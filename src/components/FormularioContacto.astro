@@ -1,5 +1,5 @@
 <div class="flex flex-col items-center w-full justify-center dark">
-  <div class="md:w-3/5 w-full  mx-auto bg-base  rounded-xl shadow-md p-6">
+  <div class="md:w-3/5 w-full  mx-auto bg-base  rounded-xl  p-6">
 
     <form id="Emailform" class="flex  flex-col gap-4 p-4 justify-center items-center flex-wrap">
       <input
@@ -12,21 +12,21 @@
         type="email"
         id="Email"
         class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full  "
-        placeholder="Correo Electronico"
+        placeholder="Correo Electrónico"
         required
       />
       <input
         type="number"
         id="Phone"
         class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full "
-        placeholder="Numero de Telefono"
+        placeholder="Número de Teléfono"
         required
       />
       <input
         id="subject"
         type="text"
         class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full  "
-        placeholder="Nombre de la compañia"
+        placeholder="Nombre de la compañía"
         required
       />
 
@@ -43,13 +43,14 @@
         type="submit"
         class="btn btn-primary btn-outline my-2 w-1/2"
       >
-        Envianos un Correo
+        Envíanos un Correo
       </button>
       <button
       id="whatsappButton"
-      class="btn bg-green-700 my-2 w-1/2"
+      type="submit"
+      class="btn btn-success btn-outline  my-2 w-1/2"
     >
-      Envianos un Mensaje
+      Envíanos un Mensaje
     </button>
 </div>
     </form>
@@ -76,7 +77,7 @@
       window.location.href = mailtoLink;
   });
 
-  document.getElementById("whatsappButton").addEventListener("click", function(event) {
+  document.getElementById("whatsappButton").addEventListener("submit", function(event) {
     event.preventDefault();
     
     // Obtener valores del formulario

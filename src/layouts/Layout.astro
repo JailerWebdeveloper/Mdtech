@@ -74,6 +74,24 @@ import { SEO } from "astro-seo";
       body::-webkit-scrollbar-thumb {
         background: #414141;
       }
+      .textured{
+        position: relative;
+      }
+      .textured::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        background-image: url("/B.png");
+        background-size:50%;
+        background-position: 80%  ;
+        background-repeat:repeat;
+        mix-blend-mode:normal;
+        z-index: -1;
+      }
     </style>
     <script is:raw>
       document.querySelectorAll("a[data-section]").forEach((anchor) => {
