@@ -1,5 +1,7 @@
 ---
-
+import i18next, { t } from "i18next";
+import { localizePath } from "astro-i18next";
+import { LanguageSelector } from "astro-i18next/components";
 ---
 
 <nav class="navbar absolute z-10 px-10 rounded-full  text-white">
@@ -23,30 +25,34 @@
         tabindex="0"
         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
       >
-      <li class="hover:text-primary"><a href=""  data-section="QuienesSomos">Quienes somos</a></li>
+      <li class="hover:text-primary"><a href=""  data-section="QuienesSomos">{t("navbar.aboutus")}</a></li>
+
         <li class="hover:text-primary">
-          <a href="" data-section="Servicios">Servicios</a>
+          <a href="" data-section="Servicios">{t("navbar.services")}</a>
           <ul class="p-2">
-            <li><a href="" data-section="Servicios">Nuestros Servicios</a></li>
-            <li><a href="" data-section="NuestrosProyectos">Proyectos</a></li>
-            <li><a href="" data-section="Testimonios">Clientes</a></li>
+            <li><a href="" data-section="Servicios">{t("navbar.ourservices")}</a></li>
+            <li><a href="" data-section="NuestrosProyectos">{t("navbar.work")}</a></li>
+            <li><a href="" data-section="Testimonios">{t("navbar.testimonials")}</a></li>
           </ul>
         </li>
-        <li class="hover:text-primary"><a href="" data-section="Contacto">Contactanos</a></li>
+        <li class="hover:text-primary"><a href="" data-section="Contacto">{t("navbar.contact")}</a></li>
+        <li><LanguageSelector showFlag={true} class="btn btn-ghost text-primary "/></li>
+
       </ul>
     </div>
-    <a href="/" class="text-xl btn btn-ghost md:p-4 w-60 h-20"> <img src="./Logo.svg" alt="MdtechLogo" class="w-60" /> </a>
+    <a href={localizePath("/")} class="text-xl btn btn-ghost md:p-4 w-60 h-20"> <img src="./Logo.svg" alt="MdtechLogo" class="w-60" /> </a>
   </div>
   <div class="navbar-end hidden lg:flex">
     <ul class="menu menu-horizontal px-1 z-40">
-      <li class="hover:text-primary"><a href=""  data-section="QuienesSomos">Quienes somos</a></li>
+      <li class="hover:text-primary"><a href=""  data-section="QuienesSomos">{t("navbar.aboutus")}</a></li>
       <li class="hover:text-primary">
-        <a href="" data-section="Servicios">Servicios</a>
+        <a href="" data-section="Servicios">{t("navbar.services")}</a>
       </li>
-      <li class="hover:text-primary"><a href="" data-section="Contacto">Contactanos</a></li>
+      <li class="hover:text-primary"><a href="" data-section="Contacto">{t("navbar.contact")}</a></li>
+      
     </ul>
   </div>
- 
+  <LanguageSelector showFlag={true} class="btn btn-ghost text-primary md:block hidden" />
 </nav>
 
 

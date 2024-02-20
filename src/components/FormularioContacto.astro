@@ -1,3 +1,8 @@
+---
+import i18next, { t } from "i18next";
+
+---
+<html lang={i18next.language}>
 <div class="flex flex-col items-center w-full justify-center dark">
   <div class="md:w-3/5 w-full  mx-auto bg-base  rounded-xl  p-6">
 
@@ -6,27 +11,27 @@
         type="text"
         id="Name"
         class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 w-full focus:ring-blue-500 transition ease-in-out duration-150 "
-        placeholder="Nombre Completo"
+        placeholder={t("form.name")}
       />
       <input
         type="email"
         id="Email"
         class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full  "
-        placeholder="Correo Electrónico"
+        placeholder={t("form.email")}
         required
       />
       <input
         type="number"
         id="Phone"
         class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full "
-        placeholder="Número de Teléfono"
+        placeholder={t("form.phone")}
         required
       />
       <input
         id="subject"
         type="text"
         class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full  "
-        placeholder="Nombre de la compañía"
+        placeholder={t("form.company")}
         required
       />
 
@@ -34,7 +39,7 @@
         id="message"
         name="message"
         class="border border-primary resize-none w-full text-gray-200  rounded-md p-2 mb-auto md:mb-auto md:w-full md:h-auto md:min-h-[100px] md:max-h-[100px] md:flex-grow md:flex-shrink md:flex-auto focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest"
-        placeholder="Mensaje"
+        placeholder={t("form.message")}
         required
 
       ></textarea>
@@ -43,14 +48,14 @@
         type="submit"
         class="btn btn-primary btn-outline my-2 w-1/2"
       >
-        Envíanos un Correo
+        {t("form.buttonemail")}
       </button>
       <button
       id="whatsappButton"
       type="submit"
       class="btn btn-success btn-outline  my-2 w-1/2"
     >
-      Envíanos un Mensaje
+      {t("form.buttonwhatsapp")}
     </button>
 </div>
     </form>
@@ -92,3 +97,4 @@
     window.open(whatsappLink, "_blank");
 });
 </script>
+</html>

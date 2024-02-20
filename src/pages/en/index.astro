@@ -1,13 +1,13 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import BotonMagico from "../components/BotonMagico/BotonMagico.astro";
-import Herocarrousel from "../components/Herocarrousel/Herocarrousel.astro";
-import Card from "../components/Card.astro";
-import FormularioContacto from "../components/FormularioContacto.astro";
+import Layout from "../../layouts/Layout.astro";
+import BotonMagico from "../../components/BotonMagico/BotonMagico.astro";
+import Herocarrousel from "../../components/Herocarrousel/Herocarrousel.astro";
+import Card from "../../components/Card.astro";
+import FormularioContacto from "../../components/FormularioContacto.astro";
 import i18next, { t, changeLanguage } from "i18next";
 import { Trans, HeadHrefLangs } from "astro-i18next/components";
 
-changeLanguage("es");
+changeLanguage("en");
 ---
 
 <Layout title={t("site.title")}>
@@ -338,7 +338,7 @@ changeLanguage("es");
         <p
           class="uppercase antialiased text-5xl text-center tracking-wide font-bold text-primary"
         >
-        {t("contatcus")}
+          {t("contatcus")}
         </p>
         <p class="text-accent text-lg mt-4 text-center">
           <Trans i18nKey="Contactext">

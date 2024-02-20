@@ -1,0 +1,108 @@
+{
+  "site": {
+    "title": "MDtech"
+  },
+
+  "dataseo": {
+    "title": "Mdtech | Digital Agency",
+    "description": "We are a digital agency specialized in creating attractive and effective websites, as well as producing innovative advertising content. We offer services in web design, application development, digital marketing, social media management, and much more. Contact us to boost your business's online presence!",
+    "keywords": "digital agency, website creation, web design, web development, digital marketing, advertising content, SEO, social media, branding, e-commerce, online advertising, social media management, conversion optimization, web analysis"
+  },
+
+  "section1": {
+    "text": "<0>About Us</0> <1>We are a passionate team of creative professionals who love social media. Our mission is to plan, create, and effectively communicate through these new digital channels</1>"
+  },
+
+  "section2": {
+    "text": "<0>What We Do?</0> <1>In our agency, we don't believe in generic solutions. We work closely with each client to design a unique and personalized marketing strategy.</1>",
+    "Product1": {
+      "title": "Digital Blog Figmaland",
+      "text": "A digital blog for the community of web designers and developers. To showcase the capabilities of our designers and developers."
+    },
+    "Product2": {
+      "title": "Organick Ecommerce",
+      "text": "An ecommerce platform for the sale of organic products. It allows you to effectively promote your products and lifestyle."
+    }
+  },
+  "section3": {
+    "title": "Work with Us",
+    "description": "Our commitment is to provide high-quality services and achieve extraordinary results.",
+    "services": {
+      "1": "1. Experience and certification in digital marketing",
+      "2": "4. Creativity at another level",
+      "3": "2. Personalization",
+      "4": "5. Focus on results",
+      "5": "3. Innovation",
+      "6": "6. Excellent customer service"
+    }
+  },
+  "Cbutton": {
+    "text": "Contact Us"
+  },
+  "Seemore": "See More",
+  "section4": {
+    "title": "Testimonials",
+    "testimonials": [
+      {
+        "name": "Julene Torres",
+        "text": "Excellent quality of service and product! 100% recommended"
+      },
+      {
+        "name": "Juan José Atencio",
+        "text": "Magnificent treatment and dedication, very grateful to them for helping me build my dreams"
+      },
+      {
+        "name": "Lina Marcela Vega",
+        "text": "Recommended 10/10"
+      }
+    ]
+  },
+  "Contactext": "Ready to take your online presence to the next level?<0></0><1>Contact us today!</1>",
+  "404": {
+    "title": "Looks like you're lost",
+    "text": "Go back home"
+  },
+  "navbar": {
+    "aboutus": "About Us",
+    "services": "Services",
+    "ourservices": "Our Services",
+    "work": "Our Projects",
+    "testimonials": "Testimonials",
+    "contact": "Contact Us"
+  },
+  "carousel": {
+    "slides": [
+      {
+        "title": "We are <0>the spark</0> you need",
+        "text": "Increase your sales on social media"
+      },
+      {
+        "title": "Social Media Management",
+        "text": "Your community is more than a potential customer"
+      },
+      {
+        "title": "Customized <0>websites</0>",
+        "text": "Strengthen your digital presence as a company"
+      },
+      {
+        "title": "Digital Advertising",
+        "text": "Achieve your goals in less than 100 days"
+      },
+      {
+        "title": "Branding",
+        "text": "Effectively communicate your brand across all mediums"
+      }
+    ]
+  },
+  "form": {
+    "company": "Company Name",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "message": "Message",
+    "buttonemail": "Send us an Email",
+    "buttonwhatsapp": "Send us a Whatsapp"
+  },
+  "contatcus":"Contact Us"
+
+}

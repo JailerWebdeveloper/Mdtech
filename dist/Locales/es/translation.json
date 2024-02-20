@@ -1,0 +1,112 @@
+{
+  "site": {
+    "title": "MDtech"
+  },
+
+  "dataseo": {
+    "title": "Mdtech | Agencia Digital",
+    "description": "Somos una agencia digital especializada en la creación de páginas web atractivas y efectivas, así como en la producción de contenido publicitario innovador. Ofrecemos servicios de diseño web, desarrollo de aplicaciones, marketing digital, gestión de redes sociales y mucho más. ¡Contacta con nosotros para potenciar la presencia en línea de tu negocio!",
+    "keywords": "agencia digital, creación de páginas web, diseño web, desarrollo web, marketing digital, contenido publicitario, SEO, redes sociales, branding, e-commerce, publicidad online, gestión de redes sociales, optimización de conversiones, análisis web"
+  },
+
+  "section1": {
+    "text": "<0>Quienes somos</0> <1>Somos un equipo apasionado de profesionales creativos que amamos las redes sociales. Nuestra misión es planificar, crear y comunicar de manera efectiva a través de estos nuevos canales digitales.</1>"
+  },
+  "section2": {
+    "text": "<0>¿Qué hacemos?</0> <1>En nuestra agencia, no creemos en soluciones genéricas. Trabajamos mano a mano con cada cliente para diseñar una estrategia de marketing única y personalizada.</1>",
+    "Product1": {
+      "title": "Blog digital Figmaland",
+      "text": "Un blog digital para la comunidad de diseñadores y desarrolladores web. Para demostrar de lo que son capaces nuestros diseñadores y desarrolladores."
+    },
+    "Product2": {
+      "title": "Ecommerce Organick",
+      "text": "Un Ecommerce para la venta de productos orgánicos. Que te permitira promocionar tus productos y forma de vida de manera efectiva."
+    }
+  },
+  "section3": {
+    "title": "trabaja con nosotros",
+    "description": "Nuestro compromiso es brindar servicios de alta calidad y obtener resultados extraordinarios",
+    "services": {
+      "1": "1. Experiencia y certificación en marketing digital",
+      "2": "4. Creatividad a otro nivel",
+      "3": "2. Personalización",
+      "4": "5. Enfoque en resultados",
+      "5": "3. Innovación",
+      "6": "6. Excelente servicio al cliente"
+    }
+  },
+  "Cbutton": {
+    "text": "Contactanos"
+  },
+  "Seemore": "Ver más",
+  "section4": {
+    "title": "Testimonios",
+    "testimonials": [
+      {
+        "name": "Julene Torres",
+        "text": "Excelente calidad de servicio y producto! 100% recomendado"
+      },
+      {
+        "name": "Juan José Atencio",
+        "text": "magnífico trato y dedicación muy agradecido con ellos por ayudarme a construir mis sueños "
+      },
+      {
+        "name": "Lina marcela vega",
+        "text": "Recomendado 10/10"
+      }
+    ]
+  },
+
+  "Contactext": "¿Listo para llevar tu presencia en línea al siguiente nivel?<0></0><1>¡Contáctanos hoy mismo!</1>",
+
+  "404": {
+    "title": "Parece que te has perdido",
+    "text": "Vuelve a casa"
+  },
+  "navbar": {
+    "aboutus": "Quienes somos",
+    "services": "Servicios",
+    "ourservices": "Nuestros Servicios",
+    "work": "Nuestros Proyectos",
+    "testimonials": "Testimonios",
+    "contact": "Contactanos"
+  },
+  "carousel": {
+    "slides": [
+      {
+        "title": "Somos <0>la chispa</0> que necesitas",
+        "text": "Aumenta tus ventas en redes sociales"
+      },
+      {
+        "title": "Gestión de redes sociales",
+        "text": "Tu comunidad es más que un posible cliente"
+      },
+      {
+        "title": "Páginas web <0>personalizadas</0>",
+        "text": "Fortalece tu presencia digital como empresa"
+      },
+      {
+        "title": "Pauta Digital",
+        "text": "Logra tus objetivos en menos de 100 días"
+      },
+      {
+        "title": "Branding",
+        "text": "Comunica tu marca de manera efectiva en todos los medios"
+      }
+    ]
+  }
+
+,
+"form":{
+  "company":"Nombre de la compañía",
+  "name": "Nombre Completo",
+  "phone": "Número de Teléfono",
+  "email": "Correo Electrónico",
+  "message": "Mensaje",
+  "buttonemail": "Envíanos un Correo",
+  "buttonwhatsapp": "Envíanos un Whatsapp"
+}
+,
+"contatcus":"Contáctanos"
+
+}

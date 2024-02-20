@@ -1,63 +1,61 @@
 ---
-import Sidebar from "../Sidebar.astro";
+import i18next, { t } from "i18next";
+import { Trans } from "astro-i18next/components";
 ---
-
+<html lang={i18next.language}>
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
   />
 </head>
-<body class="">
   <div class="w-full overflow-hidden h-screen">
     <div id="slide">
       
       <div
         class="item object-cover"
-        style="background-image: url(/Banner1.svg);"
+        style="background-image: url(/BANNERS.png);"
       >
         <div class="content">
           <div class="name uppercase font-bold text-3xl md:text-5xl tracking-wide">
+            <Trans i18nKey="carousel.slides.0.title">
             Somos <span class="text-primary">la chispa</span> que necesitas
+          </Trans>
           </div>
           <div
-            class="des md:text-justify text-center text-accent text-xl tracking-wide antialiased"
+            class="des md:text-justify text-center text-accent text-xl  antialiased"
           >
-            Aumenta tus ventas en redes sociales
+            {t("carousel.slides.0.text")}
           </div>
           <div
             class="w-full z-50 flex justify-center md:justify-start items-center"
           >
           <a href="" data-section="NuestrosProyectos" class="w-full">
             <button
-              class="btn font-bold text-black uppercase antialiased tracking-wider w-2/5 btn-primary btn-sm md:btn-lg rounded-full"
-              >Ver más</button
+              class="btn font-bold text-black uppercase antialiased tracking-wider w-2/5 btn-primary  rounded-full"
+              >{t("Seemore")}</button
             >
           </a>
           </div>
         </div>
       </div>
-      <div class="item" style="background-image: url(/BANNERS.png);">
+      <div class="item" style="background-image: url(/Banner1.svg);">
         <div class="content">
           <div class="name uppercase font-bold text-3xl md:text-5xl tracking-wide">
-           Gestión de redes sociales
+           {t("carousel.slides.1.title")}
           </div>
           <div
-            class="des md:text-justify text-center text-accent text-xl tracking-wide antialiased"
+            class="des md:text-justify text-center text-accent text-xl  antialiased"
           >
-            Tu comunidad es más que un posible cliente
+            {t("carousel.slides.1.text")}
           </div>
           <div
             class="w-full z-50 flex justify-center md:justify-start items-center"
           >
           <a href="" data-section="NuestrosProyectos" class="w-full">
             <button
-              class="btn font-bold text-black uppercase antialiased tracking-wider w-2/5 btn-primary btn-sm md:btn-lg rounded-full"
-              >Ver más</button
+              class="btn font-bold text-black uppercase antialiased tracking-wider w-2/5 btn-primary  rounded-full"
+              >{t("Seemore")}</button
             >
           </a>
           </div>
@@ -66,20 +64,22 @@ import Sidebar from "../Sidebar.astro";
       <div class="item" style="background-image: url(/B1.svg);">
         <div class="content">
           <div class="name uppercase font-bold text-3xl md:text-5xl tracking-wide">
+            <Trans i18nKey="carousel.slides.2.title">
             Páginas web <span class="text-primary">personalizadas</span>
+            </Trans>
           </div>
           <div
-            class="des md:text-justify text-center text-accent text-xl tracking-wide antialiased"
+            class="des md:text-justify text-center text-accent text-xl  antialiased"
           >
-            Fortalece tu presencia digital como empresa
+            {t("carousel.slides.2.text")}
           </div>
           <div
             class="w-full z-50 flex justify-center md:justify-start items-center"
           >
           <a href="" data-section="NuestrosProyectos" class="w-full">
             <button
-              class="btn font-bold text-black uppercase antialiased tracking-wider w-2/5 btn-primary btn-sm md:btn-lg rounded-full"
-              >Ver más</button
+              class="btn font-bold text-black uppercase antialiased tracking-wider w-2/5 btn-primary  rounded-full"
+              >{t("Seemore")}</button
             >
           </a>
           </div>
@@ -91,20 +91,20 @@ import Sidebar from "../Sidebar.astro";
       >
         <div class="content">
           <div class="name uppercase font-bold text-3xl md:text-5xl tracking-wide">
-            Pauta<br>Digital
+            {t("carousel.slides.3.title")}
           </div>
           <div
-            class="des md:text-justify text-center text-accent text-xl tracking-wide antialiased"
+            class="des md:text-justify text-center text-accent text-xl  antialiased"
           >
-           Logra tus objetivos en menos de 100 días 
+           {t("carousel.slides.3.text")}
           </div>
           <div
             class="w-full z-50 flex justify-center md:justify-start items-center"
           >
           <a href="" data-section="NuestrosProyectos" class="w-full">
             <button
-              class="btn font-bold text-black uppercase antialiased tracking-wider w-2/5 btn-primary btn-sm md:btn-lg rounded-full"
-              >Ver más</button
+              class="btn font-bold text-black uppercase antialiased tracking-wider w-2/5 btn-primary  rounded-full"
+              >{t("Seemore")}</button
             >
           </a>
           </div>
@@ -116,20 +116,20 @@ import Sidebar from "../Sidebar.astro";
       >
         <div class="content">
           <div class="name uppercase font-bold text-3xl md:text-5xl tracking-wide">
-            Branding
+            {t("carousel.slides.4.title")}
           </div>
           <div
-            class="des md:text-justify text-center text-accent text-xl tracking-wide antialiased"
+            class="des md:text-justify text-center text-accent text-xl  antialiased"
           >
-            Comunica tu marca de manera efectiva en todos los medios
+            {t("carousel.slides.4.text")}
           </div>
           <div
             class="w-full z-50 flex justify-center md:justify-start items-center"
           >
           <a href="" data-section="NuestrosProyectos" class="w-full">
             <button
-              class="btn font-bold text-black uppercase antialiased tracking-wider w-2/5 btn-primary btn-sm md:btn-lg rounded-full"
-              >Ver más</button
+              class="btn font-bold rounded-full text-black uppercase antialiased tracking-wider w-2/5 btn-primary   "
+              >{t("Seemore")}</button
             >
           </a>
           </div>
@@ -156,7 +156,6 @@ import Sidebar from "../Sidebar.astro";
       document.getElementById("next").click();
     }, 12000);
   </script>
-</body>
 
 <style>
   .container {
@@ -340,3 +339,4 @@ import Sidebar from "../Sidebar.astro";
     }
   }
 </style>
+</html>
