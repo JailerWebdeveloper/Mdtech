@@ -22,18 +22,22 @@
     "Product2": {
       "title": "Organick Ecommerce",
       "text": "An ecommerce platform for the sale of organic products. It allows you to effectively promote your products and lifestyle."
-    }
+    },
+    "Product3": {
+      "title": "Social Media Management",
+      "text": "We manage your social media to position you and increase sales for your business."
+  }  
   },
   "section3": {
     "title": "Work with Us",
     "description": "Our commitment is to provide high-quality services and achieve extraordinary results.",
     "services": {
-      "1": "1. Experience and certification in digital marketing",
-      "2": "4. Creativity at another level",
-      "3": "2. Personalization",
-      "4": "5. Focus on results",
-      "5": "3. Innovation",
-      "6": "6. Excellent customer service"
+      "1": "Experience and certification in digital marketing",
+      "2": "Creativity at another level",
+      "3": "Personalization",
+      "4": "Focus on results",
+      "5": "Innovation",
+      "6": "Excellent customer service"
     }
   },
   "Cbutton": {

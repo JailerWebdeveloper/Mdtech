@@ -1,100 +1,102 @@
 ---
 import i18next, { t } from "i18next";
-
 ---
+
 <html lang={i18next.language}>
-<div class="flex flex-col items-center w-full justify-center dark">
-  <div class="md:w-3/5 w-full  mx-auto bg-base  rounded-xl  p-6">
-
-    <form id="Emailform" class="flex  flex-col gap-4 p-4 justify-center items-center flex-wrap">
-      <input
-        type="text"
-        id="Name"
-        class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 w-full focus:ring-blue-500 transition ease-in-out duration-150 "
-        placeholder={t("form.name")}
-      />
-      <input
-        type="email"
-        id="Email"
-        class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full  "
-        placeholder={t("form.email")}
-        required
-      />
-      <input
-        type="number"
-        id="Phone"
-        class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full "
-        placeholder={t("form.phone")}
-        required
-      />
-      <input
-        id="subject"
-        type="text"
-        class="border border-primary text-gray-200  rounded-md p-2  focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full  "
-        placeholder={t("form.company")}
-        required
-      />
-
-      <textarea
-        id="message"
-        name="message"
-        class="border border-primary resize-none w-full text-gray-200  rounded-md p-2 mb-auto md:mb-auto md:w-full md:h-auto md:min-h-[100px] md:max-h-[100px] md:flex-grow md:flex-shrink md:flex-auto focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest"
-        placeholder={t("form.message")}
-        required
-
-      ></textarea>
-<div class="flex flex-row gap-4 w-4/5 mx-auto uppercase antialised">
-      <button
-        type="submit"
-        class="btn btn-primary btn-outline my-2 w-1/2"
+  <div class="flex flex-col items-center w-full justify-center dark">
+    <div class="md:w-3/5 w-full mx-auto bg-base rounded-xl md:p-6">
+      <form
+        id="Emailform"
+        class="flex w-full mx-auto flex-col gap-4 justify-center items-center flex-wrap"
       >
-        {t("form.buttonemail")}
-      </button>
-      <button
-      id="whatsappButton"
-      type="submit"
-      class="btn btn-success btn-outline  my-2 w-1/2"
-    >
-      {t("form.buttonwhatsapp")}
-    </button>
-</div>
-    </form>
+        <input
+          type="text"
+          id="Name"
+          class="border border-primary text-gray-200 rounded-md p-2 focus:bg-gray-600 focus:outline-none focus:ring-1 w-full focus:ring-blue-500 transition ease-in-out duration-150"
+          placeholder={t("form.name")}
+        />
+        <input
+          type="email"
+          id="Email"
+          class="border border-primary text-gray-200 rounded-md p-2 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full"
+          placeholder={t("form.email")}
+          required
+        />
+        <input
+          type="number"
+          id="Phone"
+          class="border border-primary text-gray-200 rounded-md p-2 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full"
+          placeholder={t("form.phone")}
+          required
+        />
+        <input
+          id="subject"
+          type="text"
+          class="border border-primary text-gray-200 rounded-md p-2 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full"
+          placeholder={t("form.company")}
+          required
+        />
+
+        <textarea
+          id="message"
+          name="message"
+          class="border border-primary resize-none w-full text-gray-200 rounded-md p-2 mb-auto md:mb-auto md:w-full md:h-auto md:min-h-[100px] md:max-h-[100px] md:flex-grow md:flex-shrink md:flex-auto focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest"
+          placeholder={t("form.message")}
+          required></textarea>
+        <div
+          class="flex w-4/5 justify-center items-center gap-5 my-2 mx-auto uppercase antialised"
+        >
+          <button type="submit" class="btn btn-primary btn-outline w-3/5">
+            {t("form.buttonemail")}
+          </button>
+          <button
+            id="whatsappButton"
+            type="submit"
+            class="btn btn-success btn-outline w-3/5"
+          >
+            {t("form.buttonwhatsapp")}
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
 
+  <script is:raw>
+    document
+      .getElementById("Emailform")
+      .addEventListener("submit", function (event) {
+        event.preventDefault(); // Evitar que el formulario se envíe por defecto
 
-<script is:raw>
-  document.getElementById("Emailform").addEventListener("submit", function(event) {
-      event.preventDefault(); // Evitar que el formulario se envíe por defecto
-      
-      // Obtener valores del formulario
-      const to ="Mdtech@gmail.com";
-      const from= document.getElementById("Email").value;
-      const name = document.getElementById("Name").value;
-      const subject = document.getElementById("subject").value  + " - " + name;
-      const phone = document.getElementById("Phone").value;
-      const message = document.getElementById("message").value;
-      
-      // Construir el enlace para enviar correo
-      const mailtoLink = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=Full%20Name:%20${name}%0D%0AEmail:%20${from}%0D%0APhone:%20${phone}%0D%0AMessage:%20${encodeURIComponent(message)}`;
-      
-      // Abrir el cliente de correo predeterminado con los valores
-      window.location.href = mailtoLink;
-  });
+        // Obtener valores del formulario
+        const to = "Mdtech@gmail.com";
+        const from = document.getElementById("Email").value;
+        const name = document.getElementById("Name").value;
+        const subject = document.getElementById("subject").value + " - " + name;
+        const phone = document.getElementById("Phone").value;
+        const message = document.getElementById("message").value;
 
-  document.getElementById("whatsappButton").addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    // Obtener valores del formulario
-    const name = document.getElementById("Name").value;
-    const companyName = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
-    const phoneNumber = "573147577528";
-    // Construir el enlace para enviar mensaje de WhatsApp
-    const whatsappLink = `https://wa.me/${phoneNumber}?text=Hola mi Nombre es:%20${name}%0D%0ADe:%20${companyName}%0D%0AMucho gusto %20${encodeURIComponent(message)}`;
-    
-    // Abrir WhatsApp en una nueva pestaña con los valores precargados
-    window.open(whatsappLink, "_blank");
-});
-</script>
+        // Construir el enlace para enviar correo
+        const mailtoLink = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=Full%20Name:%20${name}%0D%0AEmail:%20${from}%0D%0APhone:%20${phone}%0D%0AMessage:%20${encodeURIComponent(message)}`;
+
+        // Abrir el cliente de correo predeterminado con los valores
+        window.location.href = mailtoLink;
+      });
+
+    document
+      .getElementById("whatsappButton")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Obtener valores del formulario
+        const name = document.getElementById("Name").value;
+        const companyName = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+        const phoneNumber = "573147577528";
+        // Construir el enlace para enviar mensaje de WhatsApp
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=Hola mi Nombre es:%20${name}%0D%0ADe:%20${companyName}%0D%0AMucho gusto %20${encodeURIComponent(message)}`;
+
+        // Abrir WhatsApp en una nueva pestaña con los valores precargados
+        window.open(whatsappLink, "_blank");
+      });
+  </script>
 </html>

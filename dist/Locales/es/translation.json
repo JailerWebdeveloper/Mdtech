@@ -21,18 +21,22 @@
     "Product2": {
       "title": "Ecommerce Organick",
       "text": "Un Ecommerce para la venta de productos orgánicos. Que te permitira promocionar tus productos y forma de vida de manera efectiva."
+    },
+    "Product3": {
+      "title": "Gestion de redes",
+      "text": "Gestionamos tus redes sociales para posicionarte y aumentar las ventas de tu negocio"
     }
   },
   "section3": {
     "title": "trabaja con nosotros",
     "description": "Nuestro compromiso es brindar servicios de alta calidad y obtener resultados extraordinarios",
     "services": {
-      "1": "1. Experiencia y certificación en marketing digital",
-      "2": "4. Creatividad a otro nivel",
-      "3": "2. Personalización",
-      "4": "5. Enfoque en resultados",
-      "5": "3. Innovación",
-      "6": "6. Excelente servicio al cliente"
+      "1": "Experiencia y certificación en marketing digital",
+      "2": "Creatividad a otro nivel",
+      "3": "Personalización",
+      "4": "Enfoque en resultados",
+      "5": "Innovación",
+      "6": "Excelente servicio al cliente"
     }
   },
   "Cbutton": {
@@ -94,19 +98,16 @@
         "text": "Comunica tu marca de manera efectiva en todos los medios"
       }
     ]
-  }
+  },
 
-,
-"form":{
-  "company":"Nombre de la compañía",
-  "name": "Nombre Completo",
-  "phone": "Número de Teléfono",
-  "email": "Correo Electrónico",
-  "message": "Mensaje",
-  "buttonemail": "Envíanos un Correo",
-  "buttonwhatsapp": "Envíanos un Whatsapp"
-}
-,
-"contatcus":"Contáctanos"
-
+  "form": {
+    "company": "Nombre de la compañía",
+    "name": "Nombre Completo",
+    "phone": "Número de Teléfono",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "buttonemail": "Envíanos un Correo",
+    "buttonwhatsapp": "Envíanos un Whatsapp"
+  },
+  "contatcus": "Contáctanos"
 }
